@@ -10,8 +10,18 @@ This repository contains my work for Week 1 of the Code Saviours ML/AI Internshi
 - Collect and organize 100+ Urdu text images
 - Create a labels.csv file for OCR training
 
-### Repository Structure
-```
+## Repository Structure
+
+```text
 data/
+└── raw/
+    ├── ا/
+    ├── ب/
+    ├── پ/
+    ├── ت/
+    └── ج/
+
 README.md
-SI26-Week1-Saima.ipynb
+SI26_Week1_Saima.ipynb
+labels.csv
+```
