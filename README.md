@@ -15,11 +15,11 @@ This repository contains my work for Week 1 of the Code Saviours ML/AI Internshi
 ```text
 data/
 └── raw/
-    ├── ا/
-    ├── ب/
-    ├── پ/
-    ├── ت/
-    └── ج/
+    ├── books/
+    ├── newspaper/
+    ├── other/
+    ├── signboards/
+    └── synthetic/
 
 README.md
 SI26_Week1_Saima.ipynb
