@@ -25,3 +25,6 @@ README.md
 SI26_Week1_Saima.ipynb
 labels.csv
 ```
+## Why We Need a Better Model
+
+Tesseract fails on Urdu because Urdu is a cursive script with connected letters, changing character shapes, and complex ligatures. It struggles with different fonts, image quality, and connected handwriting, resulting in incorrect or incomplete text recognition. Therefore, a dedicated Urdu OCR model is needed for better accuracy.
