@@ -1,282 +1,238 @@
-# Urdu OCR – Fine-Tuned TrOCR Model for Urdu Text Recognition
+<div align="center">
 
-> A deep learning-based Optical Character Recognition (OCR) project developed during the **Code Saviours (SMC-PRIVATE) Limited ML/AI Internship Programme – Batch SI-26**.
+# 📝 Urdu OCR using TrOCR
 
----
+### Fine-Tuning a Transformer-Based OCR Model for Urdu Text Recognition
 
-# 📌 Project Overview
+**Code Saviours (SMC-PRIVATE) Limited**  
+**ML / AI Internship Programme – Batch SI-26**
 
-Urdu Optical Character Recognition (OCR) is a challenging computer vision task due to the cursive nature of the Urdu script, multiple writing styles, ligatures, varying fonts, and complex character connections.
+**Developed by:** **Saima Manzoor**
 
-This project focuses on building an Urdu OCR system using Microsoft's **TrOCR (Transformer-based Optical Character Recognition)** model. The model was fine-tuned on a custom Urdu image dataset collected during the internship.
-
-The final application provides a simple interface where users can upload an Urdu text image and receive the extracted text.
-
----
-
-# 🎯 Problem Statement
-
-Extracting Urdu text from images is considerably more difficult than English OCR because:
-
-- Urdu characters are connected.
-- Characters change shape depending on their position.
-- Different fonts produce different character appearances.
-- Images may contain noise, blur, or complex backgrounds.
-
-This project aims to automate Urdu text extraction using deep learning.
+</div>
 
 ---
 
-# 🌍 Why This Project Matters
+# 📖 About the Project
 
-Accurate Urdu OCR has many real-world applications:
+Optical Character Recognition (OCR) is a computer vision technology that converts text from images into machine-readable text. While OCR performs well for many languages, Urdu remains a challenging language because of its cursive writing style, connected characters, and different font variations.
 
-- Digitizing Urdu books
-- Newspaper archiving
-- Historical document preservation
-- Educational resources
-- Government document digitization
-- Searchable Urdu documents
+This project was completed as part of the **Code Saviours ML/AI Internship (Batch SI-26)**. Throughout the internship, I learned the complete workflow of developing an OCR system, including dataset preparation, preprocessing, model fine-tuning, evaluation, and building a simple user interface for text extraction.
+
+The project uses **Microsoft's TrOCR (Transformer-based Optical Character Recognition)** model as the foundation for recognizing Urdu text from images.
 
 ---
 
-# 🚀 Features
+# 🎯 Project Objectives
 
-- Fine-tuned TrOCR model
-- Urdu handwritten/printed text recognition
-- Image upload interface
-- Automatic text extraction
-- Simple Gradio web interface
-- Hugging Face deployment support
+The main objective of this project was to:
 
----
-
-# 📅 Internship Workflow (Week 1 → Week 5)
-
-## ✅ Week 1 – Dataset Collection
-
-Collected and organized Urdu text images.
-
-Tasks completed:
-
-- Downloaded Urdu OCR dataset
-- Selected sample images
-- Organized dataset folders
-- Uploaded dataset to GitHub
-- Prepared images for training
+- Learn the complete OCR development workflow.
+- Understand transformer-based OCR models.
+- Fine-tune a pretrained TrOCR model on an Urdu dataset.
+- Build a simple interface for extracting Urdu text from images.
+- Organize the complete project on GitHub following professional development practices.
 
 ---
 
-## ✅ Week 2 – Data Preparation
+# 🌍 Why Urdu OCR?
 
-Prepared dataset for model training.
+Urdu OCR can be useful in many practical applications, including:
 
-Tasks completed:
-
-- Cleaned dataset
-- Matched images with labels
-- Organized training files
-- Generated training samples
-- Prepared model input format
+- 📚 Digitizing books and newspapers
+- 🎓 Educational resources
+- 🏛 Historical document preservation
+- 📄 Government record digitization
+- 🔍 Searchable Urdu archives
 
 ---
 
-## ✅ Week 3 – Model Fine-Tuning
+# 🚀 Internship Progress
 
-Fine-tuned Microsoft's TrOCR model.
+## ✅ Week 1 – Introduction & Dataset Preparation
 
-Main steps:
+The first week focused on understanding Optical Character Recognition (OCR), exploring the project requirements, and preparing the dataset for future training.
 
-- Loaded pretrained TrOCR model
-- Loaded processor
-- Created custom dataset
-- Tokenized labels
-- Trained using Hugging Face Transformers
-- Saved trained model
+### Tasks Completed
 
-Technologies:
-
-- Python
-- PyTorch
-- Transformers
-- Google Colab
+- Learned the basics of OCR.
+- Understood the internship project requirements.
+- Created the GitHub repository.
+- Created a Hugging Face account as part of the initial project setup.
+- Collected and organized Urdu OCR images.
+- Prepared the project workspace.
 
 ---
 
-## ✅ Week 4 – Model Evaluation
+## ✅ Week 2 – Dataset Organization
 
-Evaluated the trained model.
+During this stage, the dataset was prepared for model training.
 
-Activities:
+### Tasks Completed
 
-- Loaded trained model
-- Generated predictions
-- Compared predictions with ground truth
-- Calculated evaluation metrics
-
-### Results
-
-The model was successfully trained and tested.
-
-However, prediction accuracy remained low due to:
-
-- Small fine-tuning dataset
-- Limited number of annotated samples
-- Limited training epochs
-- Dataset diversity
-
-With a larger annotated dataset and additional training, performance is expected to improve significantly.
+- Organized image files.
+- Prepared labels for training.
+- Structured the dataset for machine learning.
+- Verified data before training.
 
 ---
 
-## ✅ Week 5 – Deployment
+## ✅ Week 3 – Dataset Expansion & Data Loading
 
-Created an OCR web application using Gradio.
+The dataset was expanded to include more than **200 Urdu images** to improve the training process. A custom dataset loader was also prepared for efficient data loading.
 
-Deployment workflow:
+### Tasks Completed
 
-- Load trained model
-- Upload Urdu image
-- Generate prediction
-- Display extracted Urdu text
-
-Deployment target:
-
-- Hugging Face Spaces
-- Gradio Interface
+- Expanded the dataset.
+- Prepared the training dataset.
+- Built the custom data loader.
+- Loaded images and labels into the training pipeline.
 
 ---
 
-# 🧠 Model Used
+## ✅ Week 4 – Model Fine-Tuning
 
-**Model:** Microsoft TrOCR
+This week focused on fine-tuning the pretrained **Microsoft TrOCR** model.
 
-Base Model:
+### Training Workflow
 
-```
+- Loaded the pretrained TrOCR model.
+- Loaded the TrOCR processor.
+- Prepared the Urdu dataset.
+- Split the dataset for training and evaluation.
+- Fine-tuned the model.
+- Saved the trained model.
+
+### Base Model
+
+```text
 microsoft/trocr-base-printed
 ```
 
-Framework:
+### Evaluation
 
-- Hugging Face Transformers
+The trained model was evaluated using the prepared dataset to understand its prediction performance.
 
-Architecture:
+Although the complete OCR pipeline was successfully implemented, the current model still has room for improvement due to the limited training dataset and available training time.
 
-- Vision Encoder Decoder
+---
+
+## ✅ Week 5 – OCR Interface Development
+
+In the final week, a simple OCR interface was created using **Gradio**.
+
+The interface allows users to:
+
+- Upload an Urdu text image.
+- Process the image using the trained model.
+- Display the extracted Urdu text.
+
+This completed the end-to-end workflow from data preparation to user interaction.
+
+---
+
+# 🧠 Model Information
+
+| Item | Details |
+|------|---------|
+| **Base Model** | `microsoft/trocr-base-printed` |
+| **Architecture** | Vision Encoder Decoder (TrOCR) |
+| **Framework** | Hugging Face Transformers |
+| **Deep Learning Library** | PyTorch |
 
 ---
 
 # 📂 Dataset Details
 
-Dataset Type:
+The dataset contains Urdu text images collected and organized during the internship.
 
-Urdu OCR Dataset
+### Dataset Characteristics
 
-Contents:
+- Printed Urdu text
+- Multiple font styles
+- Different image sizes
+- Custom processed images
 
-- Urdu text images
-- Multiple fonts
-- Different text styles
-- Various image sizes
-
-Training Samples:
-
-Custom annotated Urdu images prepared during the internship.
+The processed images are available inside the **data/processed** directory.
 
 ---
 
-# ⚙️ Technologies Used
+# 🛠 Technologies Used
 
 - Python
 - PyTorch
 - Hugging Face Transformers
-- TrOCR
+- Microsoft TrOCR
 - Google Colab
 - Gradio
+- Pillow
 - Git
 - GitHub
-- Hugging Face Spaces
-- Pillow
+
+---
+
+# ⚙️ How the System Works
+
+1. Upload an Urdu image.
+2. The image is processed using the TrOCR processor.
+3. The trained model predicts the text.
+4. The extracted Urdu text is displayed.
 
 ---
 
 # 📁 Project Structure
 
-```
-Urdu-OCR/
+```text
+urdu-ocr-codesaviours-si26-saima/
+│
+├── data/
+│   └── processed/
+│
+├── SI26_Week1_Saima.ipynb
+├── si26_week2_saima.ipynb
+├── SI26_Week3_Saima.ipynb
+├── SI26_Week4_Saima.ipynb
+├── SI26_Week5_Saima.ipynb
 │
 ├── app.py
+├── labels.csv
 ├── requirements.txt
-├── README.md
-├── model/
-├── dataset/
-├── images/
-├── notebooks/
-└── outputs/
+└── README.md
 ```
 
 ---
 
-# 🌐 Live Demo
+# 💻 Running the Project
 
-## Hugging Face Space
-
-> **Paste your Hugging Face Space URL here**
-
-Example:
-
-```
-https://huggingface.co/spaces/yourusername/urdu-ocr-codesaviours-si26-saima
-```
-
----
-
-# 💻 How to Run Locally
-
-## Clone Repository
+### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/your-repository.git
+git clone https://github.com/saimamanzoor651/urdu-ocr-codesaviours-si26-saima.git
 ```
 
----
-
-## Move into Project
+### Move to the Project Folder
 
 ```bash
-cd your-repository
+cd urdu-ocr-codesaviours-si26-saima
 ```
 
----
-
-## Install Requirements
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## Run Application
+### Run the Application
 
 ```bash
 python app.py
 ```
 
-or
-
-```bash
-python3 app.py
-```
-
-The Gradio application will open in your browser.
-
 ---
 
-# 📦 Requirements
+# 📦 Required Libraries
 
-```
+```text
 transformers==4.35.0
 torch==2.0.1
 gradio==3.50.0
@@ -285,64 +241,55 @@ Pillow==10.0.0
 
 ---
 
-# 📸 Application Workflow
-
-1. Upload an Urdu text image.
-2. The image is processed using the TrOCR processor.
-3. The trained model predicts the text.
-4. The extracted Urdu text is displayed.
-
----
-
 # 📊 Results
 
-The project demonstrates the complete workflow of developing an OCR system:
+This project demonstrates the complete workflow of building an Urdu OCR system using transformer-based deep learning techniques.
+
+The project successfully covers:
 
 - Dataset preparation
-- Data preprocessing
+- Data organization
+- Dataset expansion
 - Model fine-tuning
-- Evaluation
-- Web interface development
-- Deployment
+- Model evaluation
+- OCR interface development
 
-Although the final prediction accuracy remained limited due to the small training dataset, the project successfully demonstrates the end-to-end implementation of an Urdu OCR pipeline.
+The implementation provided valuable practical experience in computer vision, OCR, and transformer-based deep learning.
 
 ---
 
-# ⚠️ Limitations
+# ⚠️ Challenges
 
-Current limitations include:
+Some challenges faced during the project include:
 
-- Small fine-tuning dataset
-- Limited annotated images
-- Limited training epochs
-- Performance decreases on unseen fonts
-- Sensitive to noisy images
+- Limited annotated training data
+- Urdu character complexity
+- Performance on unseen images
+- Limited computational resources
 
 ---
 
 # 🔮 Future Improvements
 
-Future work may include:
+Future improvements may include:
 
-- Increase dataset size
-- Add handwritten Urdu samples
-- Train for more epochs
-- Hyperparameter tuning
-- Data augmentation
-- Improve inference accuracy
-- Deploy a production-ready OCR service
+- Increasing the dataset size
+- Including handwritten Urdu text
+- Applying data augmentation
+- Training for additional epochs
+- Improving prediction accuracy
+- Deploying the application on a production-ready platform
 
 ---
 
 # 🙏 Acknowledgements
 
-Special thanks to:
+I would like to thank:
 
 - Code Saviours (SMC-PRIVATE) Limited
-- ML/AI Internship Programme – Batch SI-26
-- Hugging Face
-- Microsoft Research
+- ML / AI Internship Programme – Batch SI-26
+- Microsoft for providing the pretrained TrOCR model
+- Hugging Face Transformers
 - PyTorch
 - Google Colab
 
@@ -356,14 +303,10 @@ BS Computer Science
 
 The University of Faisalabad
 
----
-
-# 🎓 Internship Credit
-
-Built during the **Code Saviours (SMC-PRIVATE) Limited ML/AI Internship Programme – Batch SI-26**.
+**GitHub:** https://github.com/saimamanzoor651
 
 ---
 
-# 📜 License
+# 📜 Internship Credit
 
-This project is developed for educational and research purposes during the Code Saviours ML/AI Internship Programme.
+**Built during the Code Saviours (SMC-PRIVATE) Limited ML / AI Internship Programme – Batch SI-26.**
