@@ -12,6 +12,9 @@ Try the project here:
 
 https://huggingface.co/spaces/Saima-Manzoor/urdu-ocr-demo
 
+<img width="1916" height="736" alt="image" src="https://github.com/user-attachments/assets/edcb6850-d8ef-411c-8582-5b73f1bd781f" />
+
+
 ## How It Works
 
 The project uses images containing Urdu text along with their corresponding labels. The images are processed and used to fine-tune Microsoft's TrOCR model. During prediction, a user uploads an image through the web interface, and the trained model generates the predicted text. The result is then displayed directly to the user.
@@ -97,6 +100,3 @@ urdu-ocr-codesaviours-si26-saima/
 ---
 
 **Built by: Saima Manzoor | Code Saviours SI-26 | 2026**
-
-```
-
