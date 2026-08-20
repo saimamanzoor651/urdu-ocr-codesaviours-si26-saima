@@ -75,7 +75,13 @@ After starting the application, open the local URL shown in the terminal and upl
 urdu-ocr-codesaviours-si26-saima/
 │
 ├── data/
-│   └── processed/raw
+│   ├── processed/
+│   └── raw/
+│       ├── books/
+│       ├── newspaper/
+│       ├── other/
+│       ├── signboards/
+│       └── synthetic/
 │
 ├── SI26_Week1_Saima.ipynb
 ├── SI26_Week3_Saima.ipynb
