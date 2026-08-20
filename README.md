@@ -44,3 +44,59 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/saimamanzoor651/urdu-ocr-codesaviours-si26-saima.git
+````
+
+Move into the project folder:
+
+```bash
+cd urdu-ocr-codesaviours-si26-saima
+```
+
+Install the required packages:
+
+```bash
+pip install gradio torch torchvision transformers spaces Pillow
+```
+
+Run the application:
+
+```bash
+python app.py
+```
+
+After starting the application, open the local URL shown in the terminal and upload an Urdu text image to test the OCR model.
+
+## Project Structure
+
+```text
+urdu-ocr-codesaviours-si26-saima/
+│
+├── data/
+│   └── processed/
+│
+├── SI26_Week1_Saima.ipynb
+├── SI26_Week3_Saima.ipynb
+├── SI26_Week4_Saima.ipynb
+├── SI26_Week5_Saima.ipynb
+│
+├── app.py
+├── requirements.txt
+├── labels.csv
+└── README.md
+```
+
+## Future Improvements
+
+* Train on a larger Urdu OCR dataset.
+* Increase the number of training epochs.
+* Improve image preprocessing.
+* Use more diverse handwriting and font styles.
+* Improve character-level accuracy.
+* Further optimize the Hugging Face demo.
+
+---
+
+**Built by: Saima Manzoor | Code Saviours SI-26 | 2026**
+
+```
+
